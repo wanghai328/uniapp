@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "测试页面",
+  "usingComponents": {
+    "uni-countdown": "/components/uni-countdown/uni-countdown"
+  }
+}

@@ -1,0 +1,1 @@
+<view><page-head vue-id="23141680-1" title="{{title}}" onVueInit="__l"></page-head><view class="ad-view"><view class="ad-tips"><text>我不是微信小程序</text></view><view class="ad-tips"><text>我是支付宝小程序</text></view></view><view class="tips"><text class="tips-text">{{text}}</text></view></view>

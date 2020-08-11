@@ -1,0 +1,17 @@
+
+video {
+	width: 690rpx;
+}
+.video_test{
+	display: block;
+	position: relative;
+}
+.test_view{
+	position: absolute;
+	top: 50rpx;
+	width: 350rpx;
+	height: 200rpx;
+	background-color: #0A98D5;
+	margin-top: 50rpx;
+}
+

@@ -1,0 +1,194 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+/* 商品列表 */
+.goodsContent{
+		width: 100%;
+		background: #f7f7f7;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+}
+.goodsLeftList{
+		margin:0 10rpx 0 40rpx;
+		width: 325rpx;
+}
+.goodsRightList{
+		margin:0 40rpx 0 10rpx;
+		width: 325rpx;
+}
+.goodsItem{
+		background: #FFFFFF;
+		width:325rpx;
+		margin-bottom: 15rpx;
+}
+.goodsItem image{
+		height: 342rpx;
+		width:342rpx;
+		
+		padding: 15rpx 15rpx 5rpx;
+}
+.goodsName{
+		font-size: 28rpx;
+		color: #2e2e2e;
+		padding: 0 20rpx;/* 
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display:-webkit-box;
+		-webkit-line-clamp:2;
+		-webkit-box-orient:vertical; */
+}
+.goodsPrice{
+		color: #ffac29;
+		font-size: 24rpx;
+		padding: 0 15rpx;
+}
+.goodsPrice image{
+		width: 20rpx;
+		height: 20rpx;
+		padding: 0 5rpx;
+}
+
+

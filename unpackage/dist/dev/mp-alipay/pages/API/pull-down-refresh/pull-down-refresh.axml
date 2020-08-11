@@ -1,0 +1,1 @@
+<view><page-head vue-id="b9540dce-1" title="{{title}}" onVueInit="__l"></page-head><view class="uni-padding-wrap uni-common-mt"><block a:for="{{data}}" a:for-item="num" a:for-index="index" a:key="index"><view class="text">{{"list - "+num}}</view></block><block a:if="{{showLoadMore}}"><view class="uni-loadmore">{{loadMoreText}}</view></block></view></view>

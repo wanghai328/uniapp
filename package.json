@@ -1,0 +1,28 @@
+{
+  "uni-app": {
+    "scripts": {
+      "mp-dingtalk": {
+        "title": "王海的小程序",
+        "env": {
+          "UNI_PLATFORM": "mp-alipay"
+        },
+        "define": {
+          "MP-DINGTALK": true
+        }
+      }
+    }
+  },
+  "name": "MyTestUni",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.2.4"
+  }
+}

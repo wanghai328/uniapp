@@ -1,0 +1,200 @@
+<template>
+	<view class="container">
+		<view class="title_view">
+			<view>
+				<icon type="personal" size="26"/>
+				<image class="title_avatar" src="../../../static/logo.png"></image>
+				<text class="title_nick">用车</text>
+			</view>
+			<view>
+				<text class="title_right">我的订单</text>
+				<text class="title_right">我的收益</text>
+			</view>
+		</view>
+		<view class="content_view">
+			<view class="content_driver">
+				<text>司机出发</text>
+				<view>
+					<text class="content_car">奥迪A6 白色</text>
+					<text class="content_car">京 K56784</text>
+				</view>
+			</view>
+			<!-- <waterfall class="goods_view"> -->
+			<waterfall column-count="2" column-width="auto" left-gap="10rpx" right-gap="10rpx" column-gap="10rpx">
+				
+				<!-- <cell class="goods_item" v-for="(item, index) in dataList" :key="index"> -->
+				<cell v-for="(item, index) in dataList" :key="index">
+					<image class="goods_img"></image>
+					<text class="goods_title">{{item.shopName}}</text>
+					<text class="goods_range">{{item.shopRange}}</text>
+				</cell>
+			</waterfall>
+			
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				dataList:[{
+					pic:"",
+					shopName:'牛角日本烤肉店(汉光百货店)牛角日本烤肉店(汉光百货店)牛角日本烤肉店(汉光百货店)牛角日本烤肉店(汉光百货店)牛角日本烤肉店(汉光百货店)牛角日本烤肉店(汉光百货店)牛角日本烤肉店(汉光百货店)',
+					shopRange:'西单烤肉人气榜第1'
+				},
+				{
+					pic:"",
+					shopName:'四季民福烤鸭店🦆',
+					shopRange:'西单中餐人气榜第4'
+				},
+				{
+					pic:"",
+					shopName:'外婆家(汉光百货店)外婆家(汉光百货店)外婆家(汉光百货店)外婆家(汉光百货店)外婆家(汉光百货店)',
+					shopRange:'浙菜人气榜第1'
+				},
+				{
+					pic:"",
+					shopName:'将太无二(日本料理)',
+					shopRange:'日料人气榜第1000'
+				},
+				{
+					pic:"",
+					shopName:'胖哥俩蟹肉煲',
+					shopRange:'朝阳中餐排名第10'
+				},
+				{
+					pic:"",
+					shopName:'嗨嗨小店烤鱼',
+					shopRange:'稀饭烤肉人气榜第10'
+				},
+				{
+					pic:"",
+					shopName:'朝阳串串香',
+					shopRange:'稀饭烤肉人气榜第12'
+				},
+				{
+					pic:"",
+					shopName:'有间大排档',
+					shopRange:'人气榜第8'
+				}
+					
+				]
+			}
+		},
+		onLoad() {},
+
+		onPullDownRefresh() {
+			console.log('refresh');
+			
+			setTimeout(function() {
+				uni.stopPullDownRefresh();
+			}, 1000);
+		},
+
+		methods: {
+		}
+	}
+</script>
+
+<style>
+	view{
+		display: flex;
+		box-sizing: border-box;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.content_view{
+		flex-direction: column;
+	}
+	.title_view{
+		width: 750rpx;
+		padding: 20rpx;
+		flex-direction: row;
+		box-sizing: border-box;
+		align-items: center;
+		justify-content: space-between;
+		border-top: #909399 solid 1rpx;
+		border-bottom: #909399 solid 1rpx;
+	}
+	.title_view view {
+		flex-direction: row;
+	}
+	.title_avatar{
+		width: 60rpx;
+		height: 60rpx;
+		border-radius: 30rpx;
+	}
+	.title_nick{
+		display: inline-block;
+		line-height: 60rpx;
+		margin-left: 40rpx;
+		font-weight: 500;
+		color: #000000;
+		font-size: 20rpx;
+		text-align: center;
+	
+	}
+	.title_right{
+		margin-left: 20rpx;
+		margin-right: 20rpx;
+		color: #909399;
+		font-size: 20rpx;
+		
+	}
+	.content_view{
+		padding: 16rpx;
+	}
+	.content_driver{
+		flex-direction: row;
+		justify-content: space-between;
+		width: 710rpx;
+		margin-left: 20rpx;
+		color: #F0F0F0;
+		background-color: #C0C0C0;
+		padding: 20rpx;
+		font-size: 24sp;
+	}
+	.content_car{
+		font-size: 10sp;
+	}
+	.goods_view{
+		width: 750rpx;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.goods_item{
+		width: 345rpx;
+		/* height: 450rpx; */
+		display: flex;
+		flex-direction: column;
+		margin-left: 20rpx;
+		margin-top: 20rpx;
+		border: #6E6E6E solid 1rpx;
+		border-radius: 10rpx;
+		background-color: #FFFFFF;
+	}
+	.goods_img{
+		width: 345rpx;
+		height: 345rpx;
+		background-color: #969799;
+	}
+	.goods_title{
+		margin-top: 10rpx;
+		margin-left: 8rpx;
+		color: #323233;
+		font-size: 12rpx;
+		font-weight: 800;
+	}
+	.goods_range{
+		margin-left: 8rpx;
+		color: #F55C23;
+		font-size: 12rpx;
+		font-weight: 500;
+	}
+</style>

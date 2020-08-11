@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "view",
+  "usingComponents": {
+    "uni-countdown": "/components/uni-countdown/uni-countdown"
+  }
+}
